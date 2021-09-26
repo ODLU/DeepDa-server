@@ -30,8 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 # 생성한 앱 등록
+# rest api로 작성을 위한 rest framework등록
 INSTALLED_APPS = [
     'account',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

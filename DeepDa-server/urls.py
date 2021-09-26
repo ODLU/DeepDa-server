@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+
+from account.api import UserList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^api/user_list/$', UserList.as_view(), name='user_list')
 ]
