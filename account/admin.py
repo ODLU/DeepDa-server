@@ -28,6 +28,7 @@ class UserAdmin(BaseUserAdmin):
     ordering = ('userid',)
     filter_horizontal = ()
 
-
+# 작성한 admin페이지에 출력되도록 등록
 admin.site.register(User, UserAdmin)
+# 기본적으로 나오는 group은 admin창에 출력되지 않도록 하기
 admin.site.unregister(Group)
